@@ -1,0 +1,22 @@
+{
+  "name": "node-splutterbot",
+  "version": "0.1.0",
+  "description": "Node IRC Bot",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules\\coffee-script\\bin\\coffee index.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevercast/node-splutterbot.git"
+  },
+  "author": "Joshua Lloyd <j.nevercast@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nevercast/node-splutterbot/issues"
+  },
+  "homepage": "https://github.com/nevercast/node-splutterbot#readme",
+  "dependencies": {
+    "coffee-script": "^1.9.3"
+  }
+}
