@@ -8,9 +8,11 @@ Bus.bus.debug = true
 
 # Create IRC client
 Client = new IRC.Client 'irc.esper.net', 'splutter',
-  userName : 'SplutterBot'
-  realName : 'nevercast/node-splutterbot'
-  channels : ['#cloudbot']
+  userName  : 'SplutterBot'
+  realName  : 'nevercast/node-splutterbot'
+  channels  : ['#cloudbot']
+  ssl       : true,
+  port      : 6697
 
 # Create two bus namespaces
 Bot = Bus.context 'bot'
