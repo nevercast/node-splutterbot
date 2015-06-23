@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nevercast/node-splutterbot#readme",
   "dependencies": {
-    "coffee-script": "^1.9.3"
+    "coffee-script": "^1.9.3",
+    "irc": "^0.3.12"
   }
 }
