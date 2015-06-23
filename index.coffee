@@ -11,7 +11,7 @@ Client = new IRC.Client 'irc.esper.net', 'splutter',
   userName  : 'SplutterBot'
   realName  : 'nevercast/node-splutterbot'
   channels  : ['#cloudbot']
-  ssl       : true,
+  secure    : true,
   port      : 6697
 
 # Create two bus namespaces
@@ -20,3 +20,6 @@ Net = Bus.context 'net'
 
 # Make our Net namespace consume Client events
 Net.consume Client, true
+
+# Log network errors
+Net.on 'netError', console.log
