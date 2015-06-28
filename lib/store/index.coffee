@@ -20,7 +20,7 @@ module.exports =
   # Intended use is a memory cache for a backing IO store.
   MemoryStorage : class MemoryStorage
     # Object containing key-value data
-    @data : {}
+    data : {}
     # Construct a new MemoryStorage
     # [msExpirationTime:number] Optional default timeout. Sets @timeout
     constructor: (msExpirationTime) ->
