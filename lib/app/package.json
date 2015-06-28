@@ -1,0 +1,11 @@
+{
+  "name": "node-splutter-app",
+  "version": "1.0.0",
+  "description": "SplutterBot application package",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Lloyd <j.nevercast@gmail.com>",
+  "license": "MIT"
+}
