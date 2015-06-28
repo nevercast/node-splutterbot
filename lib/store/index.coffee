@@ -4,7 +4,7 @@ catch
   console.log 'Error: Redis module not available.'
 
 # Formatting keys with a Store name
-formatKey(name, key) -> "_#{name}__#{key}"
+formatKey = (name, key) -> "_#{name}__#{key}"
 
 module.exports =
   # Create a Store
