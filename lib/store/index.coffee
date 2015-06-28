@@ -3,6 +3,9 @@ try
 catch
   console.log 'Error: Redis module not available.'
 
+# Formatting keys with a Store name
+formatKey(name, key) -> "_#{name}__#{key}"
+
 module.exports =
   # Create a Store
   # (name:string) Store name
@@ -80,6 +83,8 @@ module.exports =
           console.log "Notice: Redis[#{@name}] connection was closed."
     isOnline: -> @isPersistent and @redisClient and @redisClient.connected
     get: (key, callback) ->
+      # Apply key formatting
+      key = formatKey @name, key
       # If the cache misses and Redis is available
       if @cache.hasExpired key and @isOnline
         # Fetch from Redis
@@ -93,6 +98,8 @@ module.exports =
         # Pass the key and callback to the cache for handling.
         @cache.get key, callback
     set: (key, value) ->
+      # Apply key formatting
+      key = formatKey @name, key
       # Log it into our cache.
       @cache.set key, value
       # If we are persistent, send the request to Redis. Online or not.
