@@ -1,0 +1,11 @@
+{
+  "name": "node-splutter-store",
+  "version": "1.0.0",
+  "description": "Storage library for SplutterBot, optionally backed by redis",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Lloyd <j.nevercast@gmail.com>",
+  "license": "MIT"
+}
