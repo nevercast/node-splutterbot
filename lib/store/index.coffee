@@ -1,4 +1,7 @@
-Redis = require 'redis'
+try
+  Redis = require 'redis'
+catch
+  console.log 'Error: Redis module not available.'
 
 module.exports =
   # Create a Store
