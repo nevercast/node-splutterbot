@@ -1,0 +1,11 @@
+{
+  "name": "node-splutter-bus",
+  "version": "1.0.0",
+  "description": "Simple message bus used on SplutterBot",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Lloyd <j.nevercast@gmail.com>",
+  "license": "MIT"
+}

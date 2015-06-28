@@ -44,6 +44,6 @@ class BusContext
       @emit event, args...
       oldEmitter.call eventEmitter, event, args... if proxy
 
-module.exports =
-  Bus : Bus,
-  global : new BusContext new Bus 1000
+module.exports = new BusContext new Bus 1000
+module.exports.Bus = Bus
+module.exports.BusContext = BusContext
